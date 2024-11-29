@@ -21,7 +21,7 @@ const data=[{
   return (
     <div ref={ref} className='fixed z-[1] left-0 top-0 w-full h-full flex gap-5 flexwrap-wrap p-5 '>
        {data.map((item,index)=>(
-        <Cards data={item} reference={ref}/>
+        <Cards key = {index} data={item} reference={ref}/>
        ))}
     </div>
   )
